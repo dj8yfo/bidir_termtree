@@ -1,10 +1,9 @@
 [package]
-name = "termtree"
-version = "0.4.1"
-description = "Visualize tree-like data on the command-line"
-documentation = "https://docs.rs/termtree"
-homepage = "https://github.com/rust-cli/termtree"
-repository = "https://github.com/rust-cli/termtree"
+name = "bidir_termtree"
+version = "0.1.1"
+description = "Visualize tree-like data on the command-line (bidirectional)"
+homepage = "https://github.com/dj8yfo/bidir_termtree"
+repository = "https://github.com/dj8yfo/bidir_termtree"
 categories = ["command-line-interface", "visualization"]
 keywords = ["cli", "tree", "dag"]
 license = "MIT"

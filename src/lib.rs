@@ -13,7 +13,10 @@ pub trait Direction {
     
 }
 
+#[derive(Clone, Copy)]
 pub struct Up;
+
+#[derive(Clone, Copy)]
 pub struct Down;
 
 impl Direction for Up {
