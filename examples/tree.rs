@@ -1,4 +1,4 @@
-use termtree::Tree;
+use termtree::{Tree, Down};
 
 use std::path::Path;
 use std::{env, fs, io};
@@ -7,7 +7,7 @@ fn label<P: AsRef<Path>>(p: P) -> String {
     p.as_ref().file_name().unwrap().to_str().unwrap().to_owned()
 }
 
-fn tree<P: AsRef<Path>>(p: P) -> io::Result<Tree<String>> {
+fn tree<P: AsRef<Path>>(p: P) -> io::Result<Tree<String, Down>> {
     let result = fs::read_dir(&p)?.filter_map(|e| e.ok()).fold(
         Tree::new(label(p.as_ref().canonicalize()?)),
         |mut root, entry| {
